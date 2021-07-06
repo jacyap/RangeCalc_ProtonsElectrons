@@ -1,0 +1,13 @@
+Air 1.20479E-03 
+WaterLiquid 1.00000E+00
+Si02 2.32000E+00
+PyrexGlass 2.23000E+00
+Silicon 2.33000E+00
+Tungsten 1.93000E+01
+Copper 8.96000E+00
+Lead 1.13500E+01
+Aluminium 2.69890E+00
+Bone 1.85000E+00
+PMMA 1.19000E+00
+MuscleSkeletal 1.04000E+00
+AdiposeTissue 9.20000E-01
