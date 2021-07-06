@@ -2,6 +2,7 @@
 
 These are based on values from the NIST PSTAR & ESTAR database. \
 The different media were chosen based on relevance in particle therapy applications. \
+Note: The code interpolates (linearly) between values for the energy/range values not explicitly listed. \
 Written by J Yap, 2021
 
 ![Terminal](https://github.com/jacyap/RangeCalc_ProtonsElectrons/blob/main/RangeCalc.png)
@@ -16,7 +17,7 @@ Densities.txt \
 Electrons/Electrons_*Media*_ NIST i.e. Electrons_Air_NIST.txt \
 Protons/Protons_*Media*_NIST i.e. Protons_Air_NIST.txt 
 
-#### Note
+#### Bonus
 To add more materials: \
 -> In .py script, create while loops in function WhichMedia() \
 -> Create Media.txt file from NIST \
