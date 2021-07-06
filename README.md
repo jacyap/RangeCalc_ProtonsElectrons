@@ -1,7 +1,7 @@
-Simple scripts to calculate the range of electrons and protons in different media \
+## Simple scripts to calculate the range of electrons and protons in different media.
 
-These are based on values from the NIST PSTAR & ESTAR database \
-The different media were chosen based on relevance in particle therapy applications \
+These are based on values from the NIST PSTAR & ESTAR database. \
+The different media were chosen based on relevance in particle therapy applications. \
 Written by J Yap, 2021
 
 ### Main files
