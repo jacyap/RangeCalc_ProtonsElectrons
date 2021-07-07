@@ -1,7 +1,7 @@
 # J YAP July 2021
 # Script to calculate approximate range in media for electrons and protons
 # Selection of media chosen based on relevance in particle therapy applications
-# Uses values from NIST database for density, CSDA range according to energies
+# Uses values from NIST database for density, CSDA range according to energies (0.001-1000 MeV)
 
 import numpy as np
 
@@ -99,7 +99,8 @@ def WhichMedia():
 
     else: 
      print("Please choose a media")
-     WhichMedia()
+     Medium = WhichMedia()
+     return Medium
   
 # find nearest energy values
 def find_nearest(array, value):
@@ -168,4 +169,15 @@ CSDA=TableCalc()
 range = np.float(CSDA)
 Range = range/density
 
-print("The range of " +  str(Energy) + " MeV " + str(particle) +" in " + str(Medium) + " is " + str(round(Range,4))+" cm")  
+#Unit conversion display
+if 1 < Range < 100:
+    print("The range of " +  str(Energy) + " MeV " + str(particle) +" in " + str(Medium) + " is " + str(round(Range,4))+" cm")  
+
+if Range >= 100:
+    print("The range of " +  str(Energy) + " MeV " + str(particle) +" in " + str(Medium) + " is " + str(round(Range/100,4))+" m")  
+
+if 0.001 <= Range <= 1: 
+    print("The range of " +  str(Energy) + " MeV " + str(particle) +" in " + str(Medium) + " is " + str(round(Range*10,4))+" mm")  
+
+if Range < 0.001: 
+    print("The range of " +  str(Energy) + " MeV " + str(particle) +" in " + str(Medium) + " is " + str(round(Range*10000,4))+" \u03bcm")  
