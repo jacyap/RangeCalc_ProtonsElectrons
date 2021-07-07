@@ -14,12 +14,12 @@ ProjRangeCalc.py (Projected range: Protons only)
 
 ### Data files
 Densities.txt \
-Electrons/Electrons_*Media*_ NIST i.e. Electrons_Air_NIST.txt \
-Protons/Protons_*Media*_NIST i.e. Protons_Air_NIST.txt 
+Electrons/Electrons_*Medium*_ NIST i.e. Electrons_Air_NIST.txt \
+Protons/Protons_*Medium*_NIST i.e. Protons_Air_NIST.txt 
 
 #### Bonus
 To add more materials: \
--> In .py script, create while loops in function WhichMedia() \
+-> In .py script, create while loops to call the Medium in function WhichMedia() \
 -> Create Media.txt file from NIST \
 -> Add info to Densities.txt
 
