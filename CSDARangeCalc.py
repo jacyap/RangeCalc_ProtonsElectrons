@@ -14,7 +14,7 @@ Rho = []
 density_index = []
 Medium = ''
 
-#Materials and density
+# Materials and density
 d = open("Densities.txt","r")
 lines = d.readlines()
 for x in lines:
@@ -40,7 +40,7 @@ def WhichParticle():
 
     return particle
  
-#List all media types
+# List all media types
 def WhichMedia(): 
     
     medium = input("What medium? "+ str(Mat)+ ". \n" + "Please input using exact case. \n") 
@@ -102,14 +102,14 @@ def WhichMedia():
      Medium = WhichMedia()
      return Medium
   
-# find nearest energy values
+# Find nearest energy values
 def find_nearest(array, value):
     array = np.asarray(array)
     idx = (np.abs(array - value)).argmin()
     return E_i[idx], E_i[idx+1]
 
 
-#Make sure NIST media files are saved with values tab separated
+# Make sure NIST media files are saved with values tab separated
 def TableCalc(): 
     #Check if exact energy is listed in NIST table
    
@@ -136,7 +136,7 @@ def TableCalc():
         CSDAlow = CSDA_i[indexCSDAlow]
         CSDAhigh = CSDA_i[indexCSDAhigh]
         
-        #Interpolate between tabulated values
+        # Interpolate between tabulated values
         if Energy < Elow:
             denominator = Ehigh - Energy
             baseline = CSDAhigh
@@ -169,7 +169,7 @@ CSDA=TableCalc()
 range = np.float(CSDA)
 Range = range/density
 
-#Unit conversion display
+# Unit conversion display: cm (default), m, mm, um
 if 1 < Range < 100:
     print("The range of " +  str(Energy) + " MeV " + str(particle) +" in " + str(Medium) + " is " + str(round(Range,4))+" cm")  
 
