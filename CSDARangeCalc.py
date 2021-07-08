@@ -31,7 +31,6 @@ def WhichParticle():
         
         particle = str(input('electrons'))        
         particle = "Electrons"
-
                 
     if particleType == '2':
             
@@ -95,6 +94,10 @@ def WhichMedia():
 
     while medium == 'AdiposeTissue':
         Medium = "AdiposeTissue"    
+        return Medium
+
+    while medium == 'Concrete': # only electrons
+        Medium = "Concrete"    
         return Medium    
 
     else: 
@@ -110,17 +113,19 @@ def find_nearest(array, value):
 
 
 # Make sure NIST media files are saved with values tab separated
+# If no such file, the data does not exist for that particle in the specific medium (i.e. protons in Concrete)
 def TableCalc(): 
     #Check if exact energy is listed in NIST table
    
     f = open(particle+"/"+particle+"_"+Medium+"_NIST.txt","r")
+    
     for line in f.readlines():            
         currentline = line.split("\t")
         E = float(currentline[0])
         Range = float(currentline[4])  
         E_i.append(E)
         CSDA_i.append(Range)
-            
+              
     if Energy in E_i:
        indexE = E_i.index(Energy)
        CSDA = CSDA_i[indexE]
