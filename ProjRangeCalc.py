@@ -1,5 +1,6 @@
 # J YAP July 2021
 # Script to calculate approximate range in media for protons
+# Simple calculations to avoid manual searching & computation from NIST look up tables
 # Selection of media chosen based on relevance in particle therapy applications
 # Uses values from NIST database for density, projected range according to energies (0.001-1000 MeV)
 
@@ -159,8 +160,8 @@ if 1 < Range < 100:
 if Range >= 100:
     print("The range of " +  str(Energy) + " MeV " + str(particle) +" in " + str(Medium) + " is " + str(round(Range/100,4))+" m")  
 
-if 0.001 <= Range <= 1: 
+if 0.01 <= Range <= 1: 
     print("The range of " +  str(Energy) + " MeV " + str(particle) +" in " + str(Medium) + " is " + str(round(Range*10,4))+" mm")  
 
-if Range < 0.001: 
+if Range < 0.01: 
     print("The range of " +  str(Energy) + " MeV " + str(particle) +" in " + str(Medium) + " is " + str(round(Range*10000,4))+" \u03bcm")  
