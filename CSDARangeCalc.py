@@ -1,8 +1,8 @@
-# J YAP July 2021
 # Script to calculate approximate range in media for electrons and protons
 # Simple calculations to avoid manual searching & computation from NIST look up tables
 # Selection of media chosen based on relevance in particle therapy applications
 # Uses values from NIST database for density, CSDA range according to energies (0.001-1000 MeV)
+# J YAP, July 2021. jacinta.yap@unimelb.edu.au
 
 import numpy as np
 
