@@ -1,6 +1,6 @@
 ## Simple python scripts to calculate the range of electrons and protons in different media.
 
-These are based on values from the NIST PSTAR & ESTAR database. \
+These are based on values from the NIST PSTAR & ESTAR database, to save manual calculation from the look up tables. \
 The different media were chosen based on relevance in particle therapy applications. \
 Note: The code interpolates (linearly) between values for the energy/range values not explicitly listed. \
 Written by J Yap, 2021
