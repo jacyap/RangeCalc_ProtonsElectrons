@@ -3,6 +3,7 @@
 These are based on values from the NIST PSTAR & ESTAR database, to save manual calculation from the look up tables. \
 The different media were chosen based on relevance in particle therapy applications. \
 Note: The code interpolates (linearly) between values for the energy/range values not explicitly listed. \
+Run with Python 3.8.3 \
 Written by J Yap, 2021
 
 ![Terminal](https://github.com/jacyap/RangeCalc_ProtonsElectrons/blob/main/RangeCalc.png)
