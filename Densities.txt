@@ -12,3 +12,4 @@ PMMA 1.19000E+00
 MuscleSkeletal 1.04000E+00
 AdiposeTissue 9.20000E-01
 Concrete 2.30000E+00
+Mylar 1.40000E+00

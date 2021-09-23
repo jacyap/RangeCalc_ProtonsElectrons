@@ -80,7 +80,11 @@ def WhichMedia():
 
     while medium == 'AdiposeTissue':
         Medium = "AdiposeTissue"    
-        return Medium    
+        return Medium   
+
+    while medium == 'Mylar':
+        Medium = "Mylar"    
+        return Medium     
 
     else: 
      print("Please choose a media")
@@ -138,7 +142,7 @@ def TableCalc():
              
 ## START ##
         
-print("To calculate to approximate the range of protons in different media. First choose the mediumR.")
+print("To calculate to approximate the range of protons in different media. First choose the medium.")
 
 Medium = WhichMedia()
 

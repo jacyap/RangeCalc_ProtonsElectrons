@@ -99,7 +99,11 @@ def WhichMedia():
 
     while medium == 'Concrete': # only electrons
         Medium = "Concrete"    
-        return Medium    
+        return Medium
+    
+    while medium == 'Mylar': 
+        Medium = "Mylar"    
+        return Medium
 
     else: 
      print("Please choose a media")
