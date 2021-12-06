@@ -13,3 +13,7 @@ MuscleSkeletal 1.04000E+00
 AdiposeTissue 9.20000E-01
 Concrete 2.30000E+00
 Mylar 1.40000E+00
+Beryllium 1.84800E+00
+Graphite 1.70000E+00
+Kapton 1.42000E+00
+Carbon 2.00000E+00

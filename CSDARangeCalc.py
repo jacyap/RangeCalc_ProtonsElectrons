@@ -1,4 +1,4 @@
-# Script to calculate approximate range in media for electrons and protons
+# Script to calculate approximate range in media for electrons and protons (ESTAR and PSTAR)
 # Simple calculations to avoid manual searching & computation from NIST look up tables
 # Selection of media chosen based on relevance in particle therapy applications
 # Uses values from NIST database for density, CSDA range according to energies (0.001-1000 MeV)
@@ -104,6 +104,23 @@ def WhichMedia():
     while medium == 'Mylar': 
         Medium = "Mylar"    
         return Medium
+    
+    while medium == 'Beryllium':
+        Medium = "Beryllium"    
+        return Medium   
+
+    while medium == 'Graphite':
+        Medium = "Graphite"    
+        return Medium   
+
+    while medium == 'Kapton':
+        Medium = "Kapton"    
+        return Medium   
+
+    while medium == 'Carbon':
+        Medium = "Carbon"    
+        return Medium   
+
 
     else: 
      print("Please choose a media")
