@@ -186,14 +186,14 @@ particle = WhichParticle()
 Medium = WhichMedia()
 
 density_index = Mat.index(Medium)
-density = np.float(Rho[density_index])
+density = float(Rho[density_index])
 print(str(Medium) +" has a density of " + str(density) + " g/cm^3")
         
 Energy = float(input("What is the mean kinetic beam energy? [MeV] \n"))
 print(str(Energy)+ " MeV")    
 
 CSDA=TableCalc()
-range = np.float(CSDA)
+range = float(CSDA)
 Range = range/density
 
 # Unit conversion display: cm (default), m, mm, um

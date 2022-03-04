@@ -163,14 +163,14 @@ print("To calculate to approximate the range of protons in different media. Firs
 Medium = WhichMedia()
 
 density_index = Mat.index(Medium)
-density = np.float(Rho[density_index])
+density = float(Rho[density_index])
 print(str(Medium) +" has a density of " + str(density) + " g/cm^3")
         
 Energy = float(input("What is the mean kinetic beam energy? [MeV] \n"))
 print(str(Energy)+ " MeV")    
 
 ProjR=TableCalc()
-range = np.float(ProjR)
+range = float(ProjR)
 Range = range/density
 
 # Unit conversion display: cm (default), m, mm, um
