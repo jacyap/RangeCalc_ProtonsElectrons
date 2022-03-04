@@ -11,7 +11,7 @@ Written by J Yap, 2021
 ### Main files
 
 CSDARangeCalc.py (CSDA range: Protons & Electrons) \
-ProjRangeCalc.py (Projected range: Protons only)
+ProjRangeCalc_ProtonsOnly.py (PSTAR projected range: Protons only)
 
 ### Data files
 Densities.txt \
