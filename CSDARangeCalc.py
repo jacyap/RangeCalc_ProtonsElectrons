@@ -125,6 +125,9 @@ def WhichMedia():
         Medium = "Molybdenum"    
         return Medium   
 
+    while medium == 'Titanium':
+        Medium = "Titanium"    
+        return Medium  
 
     else: 
      print("Please choose a media")

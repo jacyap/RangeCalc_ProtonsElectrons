@@ -18,3 +18,4 @@ Graphite 1.70000E+00
 Kapton 1.42000E+00
 Carbon 2.00000E+00
 Molybdenum 1.02200E+01
+Titanium 4.54000E+00

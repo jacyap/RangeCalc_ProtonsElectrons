@@ -104,6 +104,10 @@ def WhichMedia():
 
     while medium == 'Molybdenum':
         Medium = "Molybdenum"    
+        return Medium  
+
+    while medium == 'Titanium':
+        Medium = "Titanium"    
         return Medium   
 
     else: 
