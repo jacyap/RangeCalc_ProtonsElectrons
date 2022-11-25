@@ -138,7 +138,11 @@ def WhichMedia():
 def find_nearest(array, value):
     array = np.asarray(array)
     idx = (np.abs(array - value)).argmin()
-    return E_i[idx], E_i[idx+1]
+    nearestEnergy = E_i[idx]
+    if Energy > nearestEnergy:
+        return E_i[idx], E_i[idx+1]
+    else: 
+        return E_i[idx-1], E_i[idx]
 
 
 # Make sure NIST media files are saved with values tab separated
