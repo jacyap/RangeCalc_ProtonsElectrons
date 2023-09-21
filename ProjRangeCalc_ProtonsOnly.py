@@ -109,6 +109,10 @@ def WhichMedia():
     while medium == 'Titanium':
         Medium = "Titanium"    
         return Medium   
+    
+    while medium == 'TissueEquivPlastic':
+        Medium = "TissueEquivPlastic"    
+        return Medium   
 
     else: 
      print("Please choose a media")
