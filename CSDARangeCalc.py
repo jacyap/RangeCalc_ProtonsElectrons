@@ -39,7 +39,8 @@ def WhichParticle():
         particle = "Protons"
 
     return particle
- 
+
+Mat.sort() # Sort Media alphabetically
 # List all media types
 def WhichMedia(): 
     

@@ -25,6 +25,7 @@ for x in lines:
         Rho.append(x.split(' ')[1])
         rho = [float(i) for i in Rho]
 
+Mat.sort() # Sort Media alphabetically
 # List all media types
 def WhichMedia(): 
     
