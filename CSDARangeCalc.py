@@ -14,6 +14,7 @@ Mat = []
 Rho = []
 density_index = []
 Medium = ''
+Materials_list = []
 
 # Materials and density
 d = open("Densities.txt","r")
@@ -40,11 +41,13 @@ def WhichParticle():
 
     return particle
 
-Mat.sort() # Sort Media alphabetically
+Materials_list = Mat.copy()
+Materials_list.sort() # Sort Media alphabetically
+
 # List all media types
 def WhichMedia(): 
     
-    medium = input("What medium? "+ str(Mat)+ ". \n" + "Please input using exact case. \n") 
+    medium = input("What medium? "+ str(Materials_list)+ ". \n" + "Please input using exact case. \n") 
             
     while medium == 'Air':
         Medium = "Air"
