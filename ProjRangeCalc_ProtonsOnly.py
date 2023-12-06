@@ -115,6 +115,18 @@ def WhichMedia():
     while medium == 'TissueEquivPlastic':
         Medium = "TissueEquivPlastic"    
         return Medium   
+    
+    while medium == 'Iron':
+        Medium = "Iron"    
+        return Medium   
+
+    while medium == 'Gold':
+        Medium = "Gold"    
+        return Medium   
+
+    while medium == 'Silver':
+        Medium = "Silver"    
+        return Medium   
 
     else: 
      print("Please choose a media")

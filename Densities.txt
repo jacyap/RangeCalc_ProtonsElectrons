@@ -20,3 +20,6 @@ Carbon 2.00000E+00
 Molybdenum 1.02200E+01
 Titanium 4.54000E+00
 TissueEquivPlastic 1.12700E+00
+Iron 7.87400E+00
+Gold 1.93200E+01
+Silver 1.05000E+01
