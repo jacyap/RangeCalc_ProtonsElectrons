@@ -23,3 +23,4 @@ TissueEquivPlastic 1.12700E+00
 Iron 7.87400E+00
 Gold 1.93200E+01
 Silver 1.05000E+01
+SodiumIodide 3.66700E+00

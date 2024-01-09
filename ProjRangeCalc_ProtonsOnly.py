@@ -127,6 +127,10 @@ def WhichMedia():
     while medium == 'Silver':
         Medium = "Silver"    
         return Medium   
+    
+    while medium == 'SodiumIodide':
+        Medium = "SodiumIodide"    
+        return Medium 
 
     else: 
      print("Please choose a media")
